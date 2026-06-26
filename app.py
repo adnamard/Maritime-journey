@@ -1051,9 +1051,9 @@ Data Analyst • Machine Learning Enthusiast
 
 <br>
 
-<a href="https://github.com/USERNAME" target="_blank">GitHub</a>
+<a href="https://github.com/adnamard" target="_blank">GitHub</a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="https://linkedin.com/in/USERNAME" target="_blank">LinkedIn</a>
+<a href="https://linkedin.com/in/adnamard" target="_blank">LinkedIn</a>
 
 </div>
 """,
