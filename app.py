@@ -13,7 +13,11 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
-
+import plotly.io as pio
+# Fix: orjson circular import bug on some Windows Python 3.12 environments
+pio.json.config.default_engine = "json"
+ 
+ 
 # ──────────────────────────────────────────────────────────────────────────
 # PAGE CONFIG
 # ──────────────────────────────────────────────────────────────────────────
@@ -1031,6 +1035,27 @@ for i, (title, text) in enumerate(recs, start=1):
 
 st.markdown("""
 <div style="margin-top:2.2rem; padding-top:1rem; border-top:1px solid #DCE3E6; font-size:0.8rem; color:#8493A6;">
-    Analysis Journey · Global Maritime Solutions Q1 2025 Operational Review · Built by Dea Ramanda, the output of the team's exploratory data analysis notebook.
-</div>
+    Analysis Journey · Global Maritime Solutions Q1 2025 Operational Review · </div>
 """, unsafe_allow_html=True)
+
+st.markdown("---")
+
+st.markdown(
+"""
+<div style="text-align:center; color:#64748B; font-size:0.82rem; line-height:1.7;">
+
+<br>
+
+Developed by <b>Dea Ramanda</b> |
+Data Analyst • Machine Learning Enthusiast
+
+<br>
+
+<a href="https://github.com/USERNAME" target="_blank">GitHub</a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="https://linkedin.com/in/USERNAME" target="_blank">LinkedIn</a>
+
+</div>
+""",
+unsafe_allow_html=True
+)
